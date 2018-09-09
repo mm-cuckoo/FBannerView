@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--循环滑动的ViewPager-->
+    <declare-styleable name="FBannerView">
+        <attr name="lvp_isAutoLoop" format="boolean"/>
+        <attr name="lvp_delayTime" format="integer"/>
+        <attr name="lvp_scrollerTime" format="integer"/>
+    </declare-styleable>
+
+    <!--圆形指示器-->
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_normalRadius" format="dimension"/>
+        <attr name="ci_normalRadiusColor" format="color"/>
+        <attr name="ci_selectedRadius" format="dimension"/>
+        <attr name="ci_selectedRadiusColor" format="color"/>
+        <attr name="ci_dotPadding" format="dimension"/>
+        <attr name="ci_isStroke" format="boolean"/>
+        <attr name="ci_normalStrokeWidth" format="dimension"/>
+        <attr name="ci_isBlink" format="boolean"/>
+    </declare-styleable>
+</resources>
