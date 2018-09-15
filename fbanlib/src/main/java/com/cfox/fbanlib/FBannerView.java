@@ -76,9 +76,9 @@ public class FBannerView extends ViewPager {
         super.addOnPageChangeListener(mOnInnerPageChangeListener);
 
         TypedArray a = getResources().obtainAttributes(attrs, R.styleable.FBannerView);
-        mIsAutoLoop = a.getBoolean(R.styleable.FBannerView_lvp_isAutoLoop, mIsAutoLoop);
-        mDelayTime = a.getInteger(R.styleable.FBannerView_lvp_delayTime, mDelayTime);
-        mScrollerTime = a.getInteger(R.styleable.FBannerView_lvp_scrollerTime, mScrollerTime);
+        mIsAutoLoop = a.getBoolean(R.styleable.FBannerView_ban_isAutoLoop, mIsAutoLoop);
+        mDelayTime = a.getInteger(R.styleable.FBannerView_ban_delayTime, mDelayTime);
+        mScrollerTime = a.getInteger(R.styleable.FBannerView_ban_scrollerTime, mScrollerTime);
         a.recycle();
 
         setscrollerTime();
@@ -94,6 +94,10 @@ public class FBannerView extends ViewPager {
            parentView.setClipChildren(false);
            setClipChildren(false);
            setParentViewEnv(parentView);
+       }
+
+       if (getOffscreenPageLimit() < 3) {
+           setOffscreenPageLimit(3);
        }
     }
 

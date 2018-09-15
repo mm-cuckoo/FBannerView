@@ -6,9 +6,10 @@
               android:orientation="vertical">
 
     <com.cfox.fbanlib.FBannerView
-        android:id="@+id/multi_banner_view"
-        app:lvp_delayTime="3000"
-        app:lvp_isAutoLoop="true"
+        android:id="@+id/multi_banner_view1"
+        app:ban_delayTime="3000"
+        app:ban_isAutoLoop="true"
+        app:ban_scrollerTime="800"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_width="match_parent"
@@ -16,7 +17,7 @@
 
     <com.cfox.fbanlib.CircleIndicator
         android:layout_alignParentBottom="true"
-        android:id="@+id/multi_bannner_point"
+        android:id="@+id/multi_bannner_point1"
         app:ci_normalRadiusColor="#FFF"
         app:ci_selectedRadiusColor="#FFF"
         android:layout_width="wrap_content"

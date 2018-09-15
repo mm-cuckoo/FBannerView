@@ -36,16 +36,18 @@ public class BannerActivity extends Activity {
     }
 
     private void setBanner2() {
-        FBannerView viewPager = (FBannerView) findViewById(R.id.multi_banner_view);
+        FBannerView viewPager = (FBannerView) findViewById(R.id.multi_banner_view1);
         viewPager.openShowMultiPage(true);
         viewPager.setAdapter(new MultiPageAdapter(DataFactory.getLoopData()));
         viewPager.setOnItemClickListener(mItemListener);
         viewPager.setPageMargin(20);
-        CircleIndicator pointView = (CircleIndicator) findViewById(R.id.multi_bannner_point);
+        CircleIndicator pointView = (CircleIndicator) findViewById(R.id.multi_bannner_point1);
         pointView.setViewPager(viewPager);
     }
 
     private void setBanner3() {
+
+
 
     }
 

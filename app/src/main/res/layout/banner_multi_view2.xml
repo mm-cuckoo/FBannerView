@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:orientation="vertical">
 
     <com.cfox.fbanlib.FBannerView
-        android:id="@+id/banner_view"
+        android:id="@+id/multi_banner_view2"
         app:ban_delayTime="3000"
         app:ban_isAutoLoop="true"
         app:ban_scrollerTime="800"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_width="match_parent"
         android:layout_height="220dp"/>
 
     <com.cfox.fbanlib.CircleIndicator
-        android:id="@+id/banner_point"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/multi_bannner_point2"
         app:ci_normalRadiusColor="#FFF"
         app:ci_selectedRadiusColor="#FFF"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:background="#4000"/>
+        android:layout_height="20dp" />
 
-</LinearLayout>
+</RelativeLayout>

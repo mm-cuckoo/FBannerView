@@ -9,6 +9,17 @@
 
         <include layout="@layout/banner_view" />
 
-        <include layout="@layout/banner_multi_view" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorAccent"/>
+
+        <include layout="@layout/banner_multi_view1" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorAccent"/>
+
+        <include layout="@layout/banner_multi_view2" />
     </LinearLayout>
 </ScrollView>

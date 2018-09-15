@@ -3,9 +3,9 @@
 
     <!--循环滑动的ViewPager-->
     <declare-styleable name="FBannerView">
-        <attr name="lvp_isAutoLoop" format="boolean"/>
-        <attr name="lvp_delayTime" format="integer"/>
-        <attr name="lvp_scrollerTime" format="integer"/>
+        <attr name="ban_isAutoLoop" format="boolean"/>
+        <attr name="ban_delayTime" format="integer"/>
+        <attr name="ban_scrollerTime" format="integer"/>
     </declare-styleable>
 
     <!--圆形指示器-->
